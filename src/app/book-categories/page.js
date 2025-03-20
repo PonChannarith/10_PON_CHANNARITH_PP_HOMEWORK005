@@ -9,7 +9,13 @@ export default async function Book({ searchParams }) {
 
   const books = await getAllBooks(query);
   const bookCategories = await getAllBookCategories();
-
+  // check condition search filters
+  if (SearchBarComponent && SearchBarComponent.length > 0) {
+    bookSearchs = bookSearchs.filter(
+      (book) => SearchBarComponent == book.book_cate_id
+    );
+    console.log("filtered results: ", bookSearchs);
+  }
   return (
     <div className="max-w-screen bg-gray-100 flex flex-col items-center py-10 px-5 gap-8">
       <div className="w-[85%]">

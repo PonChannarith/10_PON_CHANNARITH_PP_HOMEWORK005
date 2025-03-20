@@ -23,7 +23,7 @@ const BookCardComponents = ({ book }) => {
           </div>
         </Card>
         <Link href={`/book-categories/${book.id}`}>
-        <button className="bg-[#BFD7EA] m-3 p-2 rounded-2xl text-[#0B3954] text-md font-medium cursor-pointer" >
+        <button className="bg-[#BFD7EA] m-3 p-2 w-full rounded-2xl text-[#0B3954] text-md font-medium cursor-pointer" >
           READ FULL ARTICLE
         </button>
         </Link>
