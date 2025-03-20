@@ -23,12 +23,12 @@
             {cartoon.ct_title || "Untitled"}
           </h2>
           <p className="
-          text-[#087E8B] text-lg  font-medium line-clamp-1">
+          text-[#087E8B] text-md  font-medium line-clamp-1">
              {cartoon.ct_creator || "Unknown" }
           </p>
-          <div className="flex text-gray-500 text-sm gap-4 items-center">
+          <div className="flex text-gray-500 text-sm gap-4 items-center justify-between">
             <span>{cartoon.published_year?.split("-")[0] || "Unknown Year"}</span>
-            <span>•</span>
+            
             <span>{cartoon.view_count?.toLocaleString() || "0"} views</span>
           </div>
         </CardContent>

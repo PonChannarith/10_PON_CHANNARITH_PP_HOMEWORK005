@@ -19,7 +19,6 @@ export default function HomeCardComponent({ item }) {
       <Link href={getLinkHref(item?.item_id)}>
         <div className="relative">
           <CardContent className="flex h-96 justify-center w-96 items-center relative">
-         
             <div className="h-full w-full group relative">
               {/* Image */}
               <Image
